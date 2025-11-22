@@ -5,6 +5,7 @@
 // Learn more about theming and how to use it for your application's
 // custom components at https://material.angular.dev/guide/theming
 @use '@angular/material' as mat;
+@use "tailwindcss";
 
 html {
   @include mat.theme((
@@ -33,6 +34,10 @@ body {
   // Reset the user agent margin.
   margin: 0;
 }
-@use "tailwindcss";
+
+.elevated{
+  box-shadow: var(--mat-sys-level2);
+}
+
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
