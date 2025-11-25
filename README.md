@@ -1,3 +1,31 @@
+## Descripción
+
+Proyecto: aplicación web demo para visualizar y gestionar un catálogo de productos con tematica de acuaponía. Incluye filtrado por categoría, manejo de estado a nivel de cliente y componentes que demuestran el uso de señales y stores.
+
+## Tecnologías usadas
+
+- Angular
+- TypeScript
+- NgRx (signals)
+- RxJS 
+- HTML / SCSS
+
+## notas:
+
+Traté de hacer funcionar la lista de deseos y el carrito de compras pero no hay caso, me excede.
+
+
+
+
+
+
+
+
+
+
+
+
+
 # EdiTpFinal
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.10.
