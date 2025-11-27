@@ -1,7 +1,8 @@
-import { Component, input, output } from '@angular/core';
+import { Component, inject, input, output } from '@angular/core';
 import { Product } from '../../models/products';
 import { MatAnchor, MatButton } from "@angular/material/button";
 import { MatIcon } from '@angular/material/icon';
+import { EcommerceStore } from '../../ecommerce-store';
 
 @Component({
   selector: 'app-product-card',
@@ -24,7 +25,7 @@ import { MatIcon } from '@angular/material/icon';
           
           <span class="text-2xl font-bold text-gray-900"> \${{ product().price }}</span>
           
-          <button matButton="filled" class="flex items-center gap-2" (click)="addToCartClicked.emit(product())">
+          <button matButton="filled" class="flex items-center gap-2" (click)="store.addToCart(product())">
             <mat-icon>shopping_cart</mat-icon>
             Añadir a Carrito
           </button>
@@ -37,5 +38,5 @@ import { MatIcon } from '@angular/material/icon';
 export class ProductCard {
   product = input.required<Product>();
 
-  addToCartClicked = output<Product>();
+  store = inject(EcommerceStore);
 }
