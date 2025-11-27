@@ -8,7 +8,7 @@ import { SummarizeOrder } from "../../components/summarize-order/summarize-order
   imports: [BackButton, ListCartItems, SummarizeOrder],
   template: `
     <div class="mx-auto max-w-[1200px] py-6">
-      <app-back-button class="mb-6" navigateTo="./products/todo">volver</app-back-button>
+      <app-back-button label="Volver atrás" class="mb-6" navigateTo="/products/todo" />
       <h1 class="text-3xl font-extrabold mb-4">Carrito</h1>
 
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">

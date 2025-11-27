@@ -8,10 +8,14 @@ import { EcommerceStore } from '../../ecommerce-store';
   imports: [ViewPanel],
   template: `
     <div appViewPanel>
-      <h2 class="text-2xl font-bold mb-4">Resumen de orden</h2>
+      <h2 class="text-2xl font-bold mb-4">Resumen de Pedido</h2>
+      
       <div class="space-y-3 text-lg pt-4">
-        <div class="flex justify-between">\$ {{total()}} </div>
+        <div class="flex justify-between">
+          <span>\$ {{total()}} </span>
+        </div>
       </div>
+      
     </div>
   `,
   styles: ``,
